@@ -137,6 +137,13 @@ public:
     int error ;
     LidarLite();
     ~LidarLite() ;
+    void begin(uint8_t cols, uint8_t rows, uint8_t charsize = LCD_5x8DOTS);
+
+  void clear();
+  void home();
+
+  void noDisplay();
+  void display();
     bool openLidarLite() ;                   // Open the I2C bus to the Lidar-Lite
     void closeLidarLite();                   // Close the I2C bus to the Lidar-Lite
     int writeLidarLite(int writeRegister,int writeValue) ;
