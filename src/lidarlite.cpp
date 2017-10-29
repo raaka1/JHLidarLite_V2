@@ -1,4 +1,5 @@
 #include "lidarlite.h"
+#include "lcd.h"
 // Interface for Lidar-Lite V2 (Blue Label) with NVIDIA Jetson TK1
 
 
